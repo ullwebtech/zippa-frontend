@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  line-height: 1.5;
+  font-weight: 400;
+  color: #4e4e4e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+button {
+  outline: none;
+}
+b {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.snap {
+ -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.snap::-webkit-scrollbar {
+display: none;
+}
+.main {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 50%;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  flex: 0 0 auto;
+  width: 33.33%;
+  scroll-snap-align: center;
+  transition: transform 0.5s;
+}
+
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.2;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 1.4;
+  }
+}
+
+/* ::-webkit-scrollbar {
+  width: 1.1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: white;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C45631;
+}
+
+::-webkit-scrollbar-track {
+  background: #101010;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #101010;
+} */
